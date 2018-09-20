@@ -1,0 +1,1259 @@
+/*
+Theme Name: Hush
+Description: Adds support for languages written in a Right To Left (RTL) direction.
+
+-----------------------------------------------------------------
+
+	01.	Base Styles
+	02.	Structure
+	03.	Header
+	04.	Menu
+	05.	Content
+	06.	Images
+	07.	Comments
+	08.	Footer
+	09.	Widgets
+	10.	Plugins
+	11.	Responsive
+
+-----------------------------------------------------------------*/
+
+
+/*---------------------------------------------------------------*/
+/* 01. Base Styles 
+/*---------------------------------------------------------------*/
+
+
+/* Definition list */
+dt {
+    float: right;
+    clear: right;
+    text-align: left;
+}
+
+dd {
+    margin: 0 150px 0 0;
+}
+
+/* Blockquote */
+blockquote cite:before {
+    padding-left: 5px;
+	padding-right: 0;
+}
+
+/* Blockquote box style */
+blockquote.box {
+    margin-right: -30px;
+	margin-left: auto;
+}
+
+/* Blockquote border style */
+blockquote.border {
+    margin-right: 35px;
+	margin-left: auto;
+}
+
+blockquote.border p {
+    padding: 20px 30px 20px 70px;
+    border-right: 5px solid #dedede;
+	border-left: none;
+}
+
+/* Blockquote icon style */
+blockquote.icon p:before {
+    right: 0;
+	left: auto;
+}
+
+/* Blockquote align right style */
+blockquote.right {
+    float: right;
+}
+
+blockquote.right p {
+    padding: 20px 0 20px 40px;
+}
+
+/* Blockquote align right style */
+blockquote.left {
+    float: left;
+}
+
+blockquote.left p {
+    padding: 20px 40px 20px 0;
+}
+
+/* Blockquote box right style */
+blockquote.box-right {
+    margin-left: 40px;
+    float: right;
+	margin-right: auto;
+}
+
+/* Blockquote box left style */
+blockquote.box-left {
+    margin-right: 40px;
+    float: left;
+	margin-left: auto;
+}
+
+/* Blockquote bold style */
+blockquote.bold:after {
+    right: 0;
+	left: auto;
+}
+
+/* List style */
+ul,ol {
+    margin-right: 1.8em;
+	margin-left: auto;
+}
+
+ol,ul.square,ul.circle,ul.disc,ul {
+    margin-right: 30px;
+	margin-left: auto;
+}
+
+ul ul,ul ol,ol ol,ol ul {
+    margin: 4px 30px 5px 0;
+}
+
+nav ul, nav li {
+    margin: 0;
+}
+
+/* Table style */
+caption,th,td {
+    text-align: right;
+}
+
+/*---------------------------------------------------------------*/
+/* 02. Structure
+/*---------------------------------------------------------------*/
+
+#content.float-right {
+    padding-left: 60px;
+	padding-right: 0;
+}
+
+#content.float-left {
+    padding-right: 60px;
+	padding-left: 0;
+}
+
+/*---------------------------------------------------------------*/
+/* 03. Header
+/*---------------------------------------------------------------*/
+
+/* Top area */
+#top-bar #topleft-widget-area {
+    float: left;
+}
+
+#top-bar #topright-widget-area {
+    float: right;
+}
+
+/* Logo */
+#site-logo {
+    float: right;
+    margin-left: 40px;
+	margin-right: auto;
+}
+
+/* Mobile header style */
+#mobile-site-header #mobile-site-logo {
+    right: 32px;
+	left: auto;
+}
+
+#mobile-site-header #mobile-site-logo {
+    float: right;
+}
+
+#mobile-site-header .toggle-mobile-menu {
+    float: left;
+    left: 32px;
+	right: auto;
+}
+
+/* Header search */
+.header-search {
+    right: 0;
+    left: 0;
+}
+
+.header-search .toggle-header-search {
+    left: 0;
+	right: auto;
+}
+
+.header-search .toggle-header-search span {
+    left: 0;
+	right: auto;
+}
+
+/* Default header */
+.header-style-default .menu-container-2,.header-style-centred .menu-container-2 {
+    padding-right: 25px;
+	padding-left: 0;
+}
+
+/* Centred Header */
+.header-style-centred #site-logo {
+    margin-left: 0;
+	margin-right: auto;
+}
+
+.header-style-centred #site-navigation .menu-container {
+    text-align: right;
+}
+
+/* Header w/ split menu */
+.header-style-split #site-logo {
+    right: 50%;
+	left: auto;
+}
+
+.header-style-split #site-navigation .menu-container > ul.menu {
+    float: left;
+}
+
+.header-style-split #site-navigation .site-links {
+    left: 0;
+	right: auto;
+}
+
+/*---------------------------------------------------------------*/
+/* 04. Menu
+/*---------------------------------------------------------------*/
+
+#site-navigation .menu-container {
+    float: right;
+}
+
+#site-navigation ul li {
+    float: right;
+    padding: 0 0 0 25px;
+}
+
+#site-navigation ul li i {
+    margin-left: 5px;
+	margin-right: auto;
+}
+
+#site-navigation ul li.menu-item-has-children > a {
+    padding-left: 17px;
+	padding-right: 0;
+}
+
+#site-navigation ul li.menu-item-has-children > a:after {
+    padding-left: 2px;
+    padding-right: 10px;
+}
+
+/* Alignment classes */
+.menu-float-left {
+	float: right;
+}
+
+.menu-float-right {
+	float: left;
+}
+
+/* Sub-level */
+#site-navigation ul li ul {
+    right: -10px;
+	left: auto;
+}
+
+#site-navigation ul li ul li ul {
+    right: 210px;
+	left: auto;
+}
+
+#site-navigation ul li ul li ul li a {
+    padding-left: 20px;
+}
+
+#site-navigation ul li ul li.menu-item-has-children > a {
+    padding-left: 20px;
+}
+
+#site-navigation ul li ul li.menu-item-has-children > a:after {
+    left: 20px;
+	right: auto;
+}
+
+/* Overlay & side menu toggle (hamburger icon) */
+.menu-toggle-wrapper {
+    float: right;
+}
+
+.toggle-main-menu {
+    margin: 0 0 0 5px;
+}
+
+.toggle-main-menu span {
+    right: 0;
+	left: auto;
+}
+
+.toggle-main-menu.open span:nth-child(1) {
+    right: 0;
+	left: auto;
+}
+
+.toggle-main-menu.open span:nth-child(2) {
+    right: 0;
+	left: auto;
+}
+
+#header-container .menu-toggle-wrapper {
+    margin-right: 25px;
+	margin-left: auto;
+}
+
+#site-navigation-side .menu-toggle-wrapper {
+    left: 10px;
+	right: auto;
+}
+
+#site-navigation-overlay .menu-toggle-wrapper {
+    left: 20px;
+	right: auto;
+}
+
+/* Side menu */
+#site-navigation-side {
+    border-right: 1px solid #efefef;
+    left: 0;
+	right: auto;
+	border-left: none;
+	-webkit-transform: translate(-100%,0);
+	transform: translate(-100%,0);
+}
+
+#site-navigation-side ul li i {
+    margin-left: 5px;
+	margin-right: auto;
+}
+
+#site-navigation-side.side-menu-active {
+	-webkit-transform: translate(0%,0);
+	transform: translate(0%,0);
+}
+
+
+/* Overlay menu */
+#site-navigation-overlay {
+    right: 0;
+	left: auto;
+}
+
+#site-navigation-overlay ul li i {
+    margin-left: 10px;
+	margin-right: auto;
+}
+
+
+/* Site links */
+.site-links .header_cart_wrapper,.site-links .search_button {
+    float: right;
+}
+
+.site-links .search_button {
+    margin-right: 24px;
+	margin-left: auto;
+}
+
+.site-links .header_cart_link {
+    margin-right: 25px;
+	margin-left: auto;
+}
+
+.site-links .header_cart_link .cart_product_count {
+    right: 14px;
+	left: auto;
+}
+
+/* Mega menu */
+#site-navigation ul > li.megamenu > ul > li {
+    border-left: 1px solid rgba(0,0,0,0.05);
+	border-right: none;
+}
+
+#site-navigation ul > li.megamenu > ul > li:last-child {
+    border-left: none;
+	border-right: none;
+}
+
+#site-navigation ul li.megamenu ul li ul {
+    right: 0;
+	left: auto;
+}
+
+/* Header layout specific syles */
+.header-style-split #site-navigation ul li.megamenu > ul {
+    right: 0;
+	left: auto;
+}
+
+/* Mobile menu */
+#mobile-site-navigation {
+    left: 0;
+	right: auto;
+	-webkit-transform: translate(-100%,0);
+	-moz-transform: translate(-100%,0);
+	transform: translate(-100%,0);
+}
+
+#mobile-site-navigation .mobile-menu-header i {
+    margin-left: 25px;
+    float: left;
+	margin-right: auto;
+}
+
+#mobile-site-navigation .mobile-menu-heading {
+    margin-right: 30px;
+	margin-left: auto;
+}
+
+#mobile-site-navigation ul.menu li > a {
+    padding: 16px 30px 16px 10px;
+}
+
+#mobile-site-navigation ul li.menu-item-has-children > span {
+    left: 18px;
+	right: auto;
+}
+
+#mobile-site-navigation ul li.menu-item-has-children > span:before {
+    padding-right: 1px;
+	padding-left: 0;
+}
+
+#mobile-site-navigation ul li.menu-item-has-children ul {
+    margin-right: 30px;
+    border-right: 2px solid #eee;
+	margin-left: auto;
+	border-left: none;
+}
+
+#mobile-menu-bg {
+    right: 0;
+	left: auto;
+}
+
+/*---------------------------------------------------------------*/
+/* 05. Content
+/*---------------------------------------------------------------*/
+
+/* Archive layout */
+.archive-layout.layout-two-column:nth-child(odd) {
+    float: right;
+}
+
+.archive-layout.layout-two-column:nth-child(even) {
+    float: left;
+}
+
+/* Posts - Layout 2 - image overlay */
+.archive-style-2.layout-two-column .meta-date,.archive-style-2.layout-two-column .meta-author.author-only {
+    margin-left: 10px;
+	margin-right: auto;
+}
+
+/* Video & Gallery format */
+.archive-layout.format-video .post-preview:before,.archive-layout.format-gallery .post-preview:before,.archive-layout.format-link .post-preview:before {
+    left: 0;
+    border-top-right-radius: 2px;
+	right: auto;
+}
+
+/* Single post layout */
+.single-layout .mnky-featured-image-caption {
+    text-align: left;
+}
+
+/* Meta */
+.meta-comments:before {
+    margin-left: 10px;
+}
+
+.meta-date {
+    margin-left: 10px;
+	margin-right: auto;
+}
+
+.entry-meta-blog .meta-author {
+    margin-left: 10px;
+	margin-right: auto;
+}
+
+.tag-links span a {
+    margin-left: 10px;
+	margin-right: auto;
+}
+
+.tag-links span a:before {
+    margin-left: 1px;
+	margin-right: auto;
+}
+
+.tag-links span a:after {
+    margin-right: 0;
+	margin-left: auto;
+}
+
+.article-labels span {
+    margin-left: 5px;
+	margin-right: auto;
+}
+
+.article-labels span:only-child,.article-labels span:last-child {
+    margin-left: 0;
+	margin-right: auto;
+}
+
+/* Pagination */
+.pagination a.next {
+    margin-right: 7px;
+	margin-left: auto;
+}
+
+.pagination a.prev {
+    margin-left: 7px;
+	margin-right: auto;
+}
+
+/* Review */
+.rating-bar {
+    float: left;
+}
+
+.rating-bar-value:after {
+    float: left;
+}
+
+.rating_aspect_value {
+    float: right;
+    padding-left: 10px;
+	padding-right: 0;
+}
+
+.rating_aspect_value .rating-name {
+    margin-left: 10px;
+	margin-right: auto;
+}
+
+.rating_summary {
+    float: right;
+}
+
+.rating-stars-wrapper {
+    float: left;
+}
+
+.rating-stars {
+    float: left;
+}
+
+/* Sticky post */
+.sticky .entry-title:after {
+    float: left;
+}
+
+/* Chat format */
+.format-chat p {
+    padding: 10px 40px 10px 10px;
+}
+
+.format-chat p:before {
+    margin-right: -27px;
+    margin-left: 8px;
+}
+
+/* Password protected post */
+.post-password-form label input {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+/* Next and previous links */
+.mnky-post-links .previous-post-link {
+    float: right;
+}
+
+.mnky-post-links .next-post-link {
+    float: left;
+}
+
+/* Page links */
+.page-links span.page-links-title {
+    margin-left: 10px;
+	margin-right: auto;
+}
+
+/* Author info */
+#wrapper .author img {
+    float: right;
+}
+
+#wrapper .author .author-info a {
+    margin-right: 10px;
+	margin-left: auto;
+}
+
+#wrapper .author .fn,#wrapper .author .author-info {
+    margin-right: 130px;
+	margin-left: auto;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text:focus {
+    right: 5px;
+	left: auto;
+}
+
+/*---------------------------------------------------------------*/
+/* 06. Images
+/*---------------------------------------------------------------*/
+
+img.alignright {
+    margin-left: 1.5em;
+	margin-right: auto;
+}
+
+img.alignleft {
+    margin-right: 1.5em;
+	margin-left: auto;
+}
+
+/* WordPress Captions */
+.wp-caption.alignright {
+    margin-left: 1.5em;
+	margin-right: auto;
+}
+
+.wp-caption.alignleft {
+    margin-right: 1.5em;
+	margin-left: auto;
+}
+
+.wp-caption figcaption {
+    text-align: right;
+}
+
+/* WordPress Gallery (some parts adapted from Twenty Fourteen by the WordPress team http://wordpress.org/themes/twentyfourteen) */
+.gallery-item {
+    float: right;
+}
+
+.gallery-item a:after {
+    right: 0;
+	left: auto;
+}
+
+.gallery-columns-2 .gallery-item {
+    margin-left: 1%;
+	margin-right: auto;
+}
+
+.gallery-columns-2 .gallery-item:nth-child(2n) {
+    margin-left: 0;
+	margin-right: auto;
+}
+
+.gallery-columns-3 .gallery-item {
+    margin-left: .5%;
+	margin-right: auto;
+}
+
+.gallery-columns-3 .gallery-item:nth-child(3n) {
+    margin-left: 0;
+	margin-right: auto;
+}
+
+.gallery-columns-4 .gallery-item {
+    margin-left: .666%;
+	margin-right: auto;
+}
+
+.gallery-columns-4 .gallery-item:nth-child(4n) {
+    margin-left: 0;
+	margin-right: auto;
+}
+
+.gallery-columns-5 .gallery-item {
+    margin-left: .625%;
+	margin-right: auto;
+}
+
+.gallery-columns-5 .gallery-item:nth-child(5n) {
+    margin-left: 0;
+	margin-right: auto;
+}
+
+.gallery-columns-6 .gallery-item {
+    margin-left: .8%;
+	margin-right: auto;
+}
+
+.gallery-columns-6 .gallery-item:nth-child(6n) {
+    margin-left: 0;
+	margin-right: auto;
+}
+
+.gallery-columns-7 .gallery-item {
+    margin-left: .333%;
+	margin-right: auto;
+}
+
+.gallery-columns-7 .gallery-item:nth-child(7n) {
+    margin-left: 0;
+	margin-right: auto;
+}
+
+.gallery-columns-8 .gallery-item {
+    margin-left: .57%;
+	margin-right: auto;
+}
+
+.gallery-columns-8 .gallery-item:nth-child(8n) {
+    margin-left: 0;
+	margin-right: auto;
+}
+
+.gallery-columns-9 .gallery-item {
+    margin-left: .687%;
+	margin-right: auto;
+}
+
+.gallery-columns-9 .gallery-item:nth-child(9n) {
+    margin-left: 0;
+	margin-right: auto;
+}
+
+.gallery-caption {
+    right: 0;
+    text-align: right;
+	left: auto;
+}
+
+/*---------------------------------------------------------------*/
+/* 07. Comments
+/*---------------------------------------------------------------*/
+
+/* Comment list */
+#comments .comment-list li article {
+    margin-right: 2px;
+    margin-left: 2px;
+}
+
+#comments .comment-list .children {
+    padding-right: 30px;
+	padding-left: 0;
+}
+
+#comments .comment-body {
+    padding: 0 80px 30px 0;
+}
+
+#comments .comment-author img {
+    float: right;
+    margin-left: 20px;
+	margin-right: auto;
+}
+
+#comments .comment-meta .comment-metadata .edit-link:before {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#comments .reply {
+    left: 40px;
+	right: auto;
+}
+
+#comments .comment-reply-link:before {
+    margin-left: 10px;
+	margin-right: auto;
+}
+
+#comments .comment-navigation .nav-next {
+    float: left;
+}
+
+#comments .nav-previous a:before {
+    margin-right: 1px;
+	margin-left: auto;
+}
+
+#comments .nav-next a:after {
+    margin-right: 7px;
+    margin-left: 1px;
+}
+
+/* Pingbacks and trackbacks */
+#comments .pingback .comment-body:before {
+    padding-left: 8px;
+	padding-right: 0;
+}
+
+/* Comment form */
+#comments h3.comment-reply-title #cancel-comment-reply-link {
+    float: left;
+    margin-left: 2px;
+	margin-right: auto;
+}
+
+#comments h3.comment-reply-title #cancel-comment-reply-link:before {
+    margin-left: 10px;
+	margin-right: auto;
+}
+
+/* Comment form columns */
+.col_container .col_3 {
+    float: right;
+    padding-left: 20px;
+	padding-right: 0;
+}
+
+.col_container .col_3:last-child {
+    padding-left: 0;
+	padding-right: 0;
+}
+
+
+/*---------------------------------------------------------------*/
+/* 08. Footer
+/*---------------------------------------------------------------*/
+
+/* Scroll to top button */
+.scrollToTop {
+    left: 15px;
+	right: auto;
+}
+
+/*---------------------------------------------------------------*/
+/* 09. Widgets
+/*---------------------------------------------------------------*/
+
+/* Default widget style */
+.widget ul ul li {
+    margin-right: 10px;
+    padding-right: 0;
+	padding-left: 0;
+	margin-left: auto;
+}
+
+/* Copyright widget style */
+.site-info .recentcomments {
+    padding-right: 10px;
+	padding-left: 0;
+}
+
+.site-info .recentcomments:first-child {
+    padding-right: 0;
+	padding-left: 0;
+}
+
+.site-info ul li {
+    margin-left: 10px;
+	margin-right: auto;
+}
+
+.site-info ul li:last-child {
+    margin-left: 0;
+	margin-right: auto;
+}
+
+#site-footer .site-info ul ul {
+    margin-right:10px;
+	margin-left: auto;
+}
+
+.site-info ul ul li {
+    margin-right:0;
+	margin-left: auto;
+}
+
+/* Top bar widget style */
+#top-bar .widget {
+    margin: 0 0 0 50px;
+}
+
+#top-bar .widget:last-child {
+    margin-left: 0;
+	margin-right: auto;
+}
+
+#top-bar .recentcomments {
+    padding-right: 10px;
+	padding-left: 0;
+}
+
+#top-bar .recentcomments:first-child {
+    padding-right: 0;
+	padding-left: 0;
+}
+
+#top-bar ul li {
+    margin-left: 10px;
+	margin-right: auto;
+}
+
+#top-bar ul li:last-child {
+    margin-left: 0;
+	margin-right: auto;
+}
+
+#top-bar ul ul {
+    margin-right:10px;
+	margin-left: auto;
+}
+
+#top-bar ul ul li {
+    margin-right:0;
+	margin-left: auto;
+}
+
+
+/* Menu widget style */
+#site-navigation #menu-sidebar {
+    float: left;
+}
+
+#site-navigation #menu-sidebar .widget-container {
+    float: right;
+    margin-right: 25px;
+	margin-left: auto;
+}
+
+/* Mobile header widget style */
+#mobile-header-sidebar {
+    left: 90px;
+	right: auto;
+}
+
+/* SINGLE WIDGET STYLES */
+/* Category & Archive Widget */
+.widget_archive ul li,.widget_categories ul li {
+    text-align: left;
+}
+
+.widget_archive a,.widget_categories a {
+    float: right;
+}
+
+/* WP Menu Widget */
+#sidebar .widget.widget_nav_menu ul li a:after {
+    float: left;
+    padding-left: 10px;
+	padding-right: 0;
+}
+
+#sidebar .widget.widget_nav_menu ul li ul {
+    padding-right: 8px;
+	padding-left: 0;
+}
+
+#sidebar.float-left .widget.widget_nav_menu ul li a:before {
+    float: right;
+    padding-right: 10px;
+    margin-left: 20px;
+	padding-left: 0;
+	margin-right: auto;
+}
+
+#top-bar .widget_nav_menu ul li:hover > a {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+#top-bar .widget_nav_menu ul li ul {
+    right: 0;
+	left: auto;
+}
+
+#top-bar .widget_nav_menu ul li a:after {
+    left: 15px;
+	right: auto;
+}
+
+#menu-sidebar .widget_nav_menu {
+    text-align: right;
+}
+
+/* WP Calendar */
+#wp-calendar caption {
+    text-align: left;
+}
+
+#wp-calendar tfoot #next {
+    text-align: left;
+    padding-left: 10px;
+	padding-right: 0;
+}
+
+#wp-calendar tfoot #prev {
+    padding-right: 10px;
+	padding-left: 0;
+}
+
+
+/* Newsletter */
+.newsletter input,.newsletter button {
+	border-radius: 0px 4px 4px 0px;
+    float: right;
+}
+
+.newsletter button i {
+    margin-left: 5px;
+	margin-right: auto;
+}
+
+.newsletter input[type="submit"],.newsletter button {
+    margin-right: -2px;
+	border-left-color:rgba(255,255,255,0.5);
+    border-right-color: transparent;
+	margin-left: auto;
+	border-radius: 4px 0px 0px 4px;
+}
+
+.newsletter input[type="submit"]:hover,.newsletter input[type="submit"]:focus,.newsletter button:hover,.newsletter button:focus {
+	border-left-color:#fff;
+}
+
+/*---------------------------------------------------------------*/
+/* 10. Plugins
+/*---------------------------------------------------------------*/
+
+/* CONTACT FORM 7 */
+.wpcf7 input.wpcf7-file {
+    padding-right: 0;
+    padding-left: 10px;
+}
+
+/* Contact form 7 loader style */
+div.wpcf7 img.ajax-loader {
+    margin-right: 20px;
+	margin-left: auto;
+}
+
+/* Contact form 7 message boxes */
+span.wpcf7-not-valid-tip:before {
+    margin-left: 10px;
+	margin-right: auto;
+}
+
+/* Social Comments */
+#social_comments_control ul li img {
+    padding-left: 10px;
+	padding-right: 0;
+}
+
+.ui-tabs#social_comments_control .ui-tabs-nav li:first-child a {
+    padding-right: 0;
+	padding-left: 0;
+}
+
+/* Breadcrumb NavXT */
+.mnky_breadcrumbs {
+    float: left;
+}
+
+/*---------------------------------------------------------------*/
+/* 10. Responsive
+/*---------------------------------------------------------------*/
+
+/* Hide mobile menu on normal size screens */
+@media only screen and (min-width : 979px) {
+
+	#mobile-site-navigation.mobile-menu-active {
+		-webkit-transform: translate(0%,0);
+		-moz-transform: translate(0%,0);
+		transform: translate(0%,0);
+	}
+
+}
+	
+/*
+* -------------------------------------------------------------------------------------------
+* ALL DEVICES STARTING TABLET PORTRAIT
+* -------------------------------------------------------------------------------------------
+*/
+
+@media only screen and (max-width: 979px) {
+	
+
+	/* Auxiliary class */
+	.fintechwp-hide-on-tablet {
+		display: none;
+	}
+
+	/* Header */
+	#mobile-site-logo,#mobile-site-logo img {
+		display: inline-block;
+	}
+
+	#header-container {
+		text-align: center;
+	}
+
+	.pre-content-html {
+		height: 250px !important;
+	}
+
+	/* Navigation */
+	#site-header {
+		position: relative;
+	}
+
+	#site-header,#top-bar-wrapper {
+		display: none;
+	}
+
+	#mobile-site-header {
+		display: block;
+		position: relative;
+	}
+
+	/* Sidebar layout change */
+	#content.float-left,#content.float-right,#sidebar {
+		width: 100%;
+		padding: 0;
+	}
+
+	#sidebar.float-right,#sidebar.float-left {
+		margin: 60px 0 0;
+	}
+
+	#sidebar .widget-area aside {
+		width: 100%;
+	}
+
+	/* Comment form */
+	.col_container .col_3 {
+		float: none;
+		width: 100%;
+		padding-right: 0;
+		margin-top: 15px;
+	}
+
+	#comments p.comment-notes,p.logged-in-as,p.must-log-in {
+		margin-bottom: 20px;
+	}
+
+	/* Footer */
+	.vc_responsive .footer-sidebar .vc_col-sm-3,.vc_responsive .footer-sidebar .vc_col-sm-4,.vc_responsive .footer-sidebar .vc_col-sm-6 {
+		margin-bottom: 50px;
+	}
+
+	.vc_responsive .footer-sidebar .vc_col-sm-3:last-child,.vc_responsive .footer-sidebar .vc_col-sm-4:last-child,.vc_responsive .footer-sidebar .vc_col-sm-6:last-child {
+		margin-bottom: 0;
+	}
+}
+
+/*---------------------------------------------------------------*/
+/* 17. Responsive 
+/*---------------------------------------------------------------*/
+
+/* Hide mobile menu on normal size screens */
+@media only screen and (min-width : 979px) {
+	
+	#mobile-site-navigation.mobile-menu-active {
+		-webkit-transform: translate(-100%,0);
+		-moz-transform: translate(-100%,0);
+		transform: translate(-100%,0);
+	}
+	
+}
+
+/*
+* -------------------------------------------------------------------------------------------
+* MOBILE BOTH VIEWS
+* -------------------------------------------------------------------------------------------
+*/
+
+@media only screen and (max-width: 767px) {
+	
+	/* Header */
+		#mobile-site-logo {
+		float: right;
+	}
+
+	/* Blockquote */
+	blockquote.box {
+		margin-right: 0;
+		margin-left: auto;
+	}
+
+	blockquote.border {
+		margin-right: 0;
+		margin-left: auto;
+	}
+
+	blockquote.border p {
+		padding: 20px 20px 20px 0;
+	}
+
+	blockquote.icon p {
+		padding-left: 0;
+		padding-right: 70px;
+	}
+
+	blockquote.box-right {
+		margin-left: 0;
+		margin-right: auto;
+	}
+
+	blockquote.box-left {
+		margin-right: 0;
+		margin-left: auto;
+	}
+}
+
+
+/*
+* -------------------------------------------------------------------------------------------
+* MOBILE PORTRAIT & LOWER
+* -------------------------------------------------------------------------------------------
+*/
+	
+@media only screen and (max-width: 479px) {
+	
+	/* Definition list*/
+	dt {
+		text-align: right;
+	}
+
+	/* Comment form */
+	#comments .comment-list .children .children {
+		border-right: none;
+		border-left: none;
+	}
+
+	#comments .children .comment-body {
+		padding-right: 40px;
+		padding-left: 0;
+	}
+
+	#comments .comment-list .children {
+		padding-right: 0;
+		padding-left: 0;
+	}
+
+	#comments .reply {
+		left: auto;
+		right: auto;
+	}
+	
+}
+
+
+/* Made by the RTL-er.com - http://www.rtl-er.com */	
+/*------------------------------------------------------------------------------*/
+/* THANK YOU FOR CHOOSING OUR THEME! - MNKY Studio | http://mnkythemes.com
+/*------------------------------------------------------------------------------*/
